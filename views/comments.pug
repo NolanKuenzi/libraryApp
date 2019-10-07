@@ -1,0 +1,10 @@
+html
+head
+link(rel="stylesheet" type="text/css" href="/../public/pugstyles.css")
+
+body
+  h2 Comments for #{title}
+
+  ul 
+  each val in comments
+    <li><span>#{val}</span></li>

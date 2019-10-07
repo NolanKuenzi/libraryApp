@@ -1,0 +1,15 @@
+# main directory
+/node_modules
+.env
+
+# client
+/client/node_modules
+/client/dist
+
+# login
+/login/node_modules
+/login/dist
+
+# Misc.
+.DS_Store
+.bashrc

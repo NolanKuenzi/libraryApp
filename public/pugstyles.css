@@ -1,0 +1,27 @@
+body {
+    background-color: rgb(127, 220, 235);
+}
+
+h1 {
+    color: red;
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+h2 {
+    color: red;
+    text-decoration-color: red;
+}
+
+h3 {
+    color: red;
+}
+
+ul {
+    color: red;
+}
+
+#bkListSpan {
+    font-size: 1.1em;
+    margin-right: 0.5em;
+}

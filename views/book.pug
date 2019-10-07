@@ -1,0 +1,16 @@
+html
+head
+link(rel="stylesheet" type="text/css" href="/../public/pugstyles.css")
+
+
+body
+
+h2 
+  i #{title}
+
+h3 Id: #{id}
+h3 Comments:
+
+ ul 
+  each val in comments
+    <li><span>#{val}</span></li>

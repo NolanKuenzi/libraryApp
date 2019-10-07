@@ -1,0 +1,239 @@
+/* General */
+
+body {
+    background: rgb(127, 220, 235);
+}
+
+#email_signOut {
+    width: 15em;
+    margin-left: auto;
+    text-align: left;
+    text-decoration: underline;
+}
+
+#emailDiv {
+    margin-bottom: 0.5em;
+}
+
+#signOutDiv {
+    margin: 0.5em 0em 0.5em 0em;
+    cursor: pointer;
+}
+
+.arrow {
+    font-size: 0.5em;
+}
+
+input {
+    border: 2px solid black;
+    outline: none;
+}
+
+button {
+    border: 2px solid black;
+    outline: none;
+    cursor: pointer;
+    background-color: white;
+}
+
+button:active {
+    background-color: rgb(127, 220, 235);
+    outline: none;
+    transform: translateY(0.2em);
+}
+
+/* <FrontEnd /> Component */
+
+h1 {
+    text-align: center;
+}
+
+#togglerDiv {
+    display: flex;
+    background-color: white;
+    border: 2px solid black; 
+}
+
+#userStoriesToggleDiv {
+    text-align: center;
+    margin-left: auto;
+    margin-right: 2em;
+}
+
+#userStoriesToggler {
+    cursor: pointer;
+    border: 2px solid black;
+    width: 12em;
+    padding: 0.2em;
+}
+
+#apiResToggleDiv {
+    text-align: center;
+    margin-right: auto;
+    margin-left: 2em;
+}
+
+#apiResToggler {
+    cursor: pointer;
+    border: 2px solid black;
+    width: 12em;
+    padding: 0.2em;
+}
+
+#toggledComponents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#frontEndSection {
+    background-color: white;
+    border: 2px solid black;
+    padding: 0.5em;
+    text-align: center;
+    width: 45em;
+    margin-top: 5em;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#submit_input {
+    margin-right: 0.25em;
+    font-size: 1em;
+    width: 12em;
+    padding: 0.2em;
+}
+
+#submit_button {
+    margin-left: 0.25em;
+    font-size: 0.9em;
+    padding: 0.3em;
+    border-radius: 0.7em;
+}
+
+#displaySpan {
+    text-decoration: underline;
+}
+
+#errDiv {
+    margin: 1em 0em 1em 0em;
+}
+
+#displayBooks {
+    margin-top: 1em;
+}
+
+table {
+    margin-top: 1em;
+    overflow: scroll;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
+    cursor: pointer;
+}
+
+#displayBk {
+    border: 0.2em solid black;
+    margin: 2em auto 0em auto;
+    width: 45em;
+}
+
+h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+ 
+#commentDiv {
+    margin: 0em 0em 1em 2em;
+}
+
+#commentsUl {
+    text-align: left;
+}
+
+textarea {
+    margin-top: 3em;
+    outline: none;
+    font-size: 1em;
+    height: 4em;
+    width: 15em;
+    border: 0.1em solid black;
+}
+
+#cancelBtnDiv {
+    margin: 1em 0em 1em 0em;
+    text-align: center;
+}
+
+/* <ApiResponses /> Component */
+
+#apiResDiv {
+    display: flex;
+    flex-direction: column;
+    background-color: none;
+    margin-top: 2em;
+}
+
+.apiResFormDiv {
+    border: 4px solid black;
+    background-color: red;
+    width: 25em;
+    padding: 2em;
+    margin-top: 0.5em;
+    margin-left: 0em;
+    text-align: center;
+}
+
+#apiResTitle1 {
+    font-size: 1.2em;
+}
+
+#apiResTitle2 {
+    font-size: 1.2em;
+}
+
+.apiResInputs {
+    font-size: 1em;
+}
+
+.apiResBtns {
+    margin-top: 0.2em;
+    font-size: 0.9em;
+    padding: 0.2em 0.6em 0.2em 0.6em;
+}
+
+
+/* <UserStories /> Component */
+
+h4 {
+    text-decoration: underline;
+}
+
+#userStoriesDiv {
+    margin-top: 2em;
+    background-color: red;
+    border: 3px solid black;
+    width: 45em;
+    padding: 1em 2em 1em 1em;
+}
+
+#tableDiv {
+    margin-left: 1em;
+}
+
+td {
+    font-size: 0.9em;
+    border: 1px solid black;
+    padding: 0.3em 1em 0.3em 1em;
+    text-align: center;
+}
+
+.tbleStyles {
+    background-color: rgb(127, 220, 235);
+}
+
+#footerDiv {
+    margin-top: 2em;
+}

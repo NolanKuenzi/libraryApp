@@ -1,0 +1,105 @@
+/* General */
+
+body {
+    background: rgb(127, 220, 235);
+}
+
+h1 {
+    text-align: center;
+}
+
+.formDiv {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: red;
+    border: 2px solid black;
+    padding: 2em;
+    text-align: center;
+    width: 25em;
+    margin-top: 3em;
+}
+
+.formHeader {
+    text-decoration: underline;
+    font-size: 1.2em;
+    margin-left: 0.7em;
+}
+
+input {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    border: 2px solid black;
+    height: 2em;
+    width: 18em;
+    outline: none;
+    font-size: 0.8em;
+    
+}
+
+button {
+    border: 2px solid black;
+    outline: none;
+    cursor: pointer;
+    background-color: white;
+    text-align: center;
+    width: 8em;
+    font-size: 0.8em;
+    height: 2em;
+}
+
+button:active {
+    background-color: rgb(127, 220, 235);
+    outline: none;
+    transform: translateY(0.2em);
+}
+
+/* <Login /> component */
+
+#loginDiv {
+    width: 40em;
+    height: 26em;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: red;
+    border: 0.1em solid black;
+}
+
+#signInUpDiv {
+    margin: 2em 0.1em 0em 0em;
+    text-align: center;
+}
+
+.signSpan {
+    font-size: 1.2em;
+    margin: 0em 0.5em 0em 0.5em;
+    text-decoration: underline;
+    display: inline;
+    border: 0.1em solid black;
+    padding: 0.2em 3em 0.2em 3em;
+    cursor: pointer;
+    background: white;
+}
+
+.arrow {
+    font-size: 0.6em;
+    cursor: pointer;
+}
+
+#forgotPasswordDiv {
+    width: 34.9em;
+    margin: -2em auto 0em auto;
+    text-align: center;
+}
+
+#forgotPasswordTxt {
+    font-size: 0.9em;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* <ForgotPass /> component */
+
+#resetBtn {
+    height: 3em;
+    width: 10em;
+}

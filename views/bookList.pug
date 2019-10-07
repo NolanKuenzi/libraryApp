@@ -1,0 +1,10 @@
+html
+head
+link(rel="stylesheet" type="text/css" href="/../public/pugstyles.css")
+
+body
+h2 Books in #{email}'s library:
+
+ul 
+  each val in library
+    <li><span id="bkListSpan"><i>#{val.title}</i></span> <span>Comments: #{val.commentCount}</span></li>

@@ -7,9 +7,12 @@ const ForgotPass = () => {
   const submitFunc = async event => {
     event.preventDefault();
     try {
-      const request = await axios.post('http://localhost:3000/api/setReset', {
-        email: emailAddress,
-      });
+      const request = await axios.post(
+        'https://mysterious-reaches-14293.herokuapp.com/api/setReset',
+        {
+          email: emailAddress,
+        }
+      );
       document.cookie = `email=${emailAddress}`;
       document.cookie = `token=${request.data}`;
       alert(`Reset email sent to ${emailAddress}`);

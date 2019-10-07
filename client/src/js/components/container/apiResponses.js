@@ -16,7 +16,7 @@ const ApiResponses = () => {
           <br />
           <br />
           <span>Book Title:</span>
-          <form action="http://localhost:3000/api/books" method="post">
+          <form action="https://mysterious-reaches-14293.herokuapp.com/api/books" method="post">
             <input className="apiResInputs" type="text" name="bookTitle"></input>
             <input
               type="hidden"
@@ -30,7 +30,10 @@ const ApiResponses = () => {
           </form>
         </div>
         <div className="apiResFormDiv">
-          <form action={`http://localhost:3000/api/books/${id}`} method="post">
+          <form
+            action={`https://mysterious-reaches-14293.herokuapp.com/api/books/${id}`}
+            method="post"
+          >
             <span id="apiResTitle2">
               <b>Test post to /api/books/{'{bookid}'}</b>
             </span>

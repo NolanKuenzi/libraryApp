@@ -14,17 +14,20 @@ const Register = () => {
         alert('Passwords do not match');
         return;
       }
-      await axios.post('http://localhost:3000/api/register', {
+      await axios.post('https://mysterious-reaches-14293.herokuapp.com/api/register', {
         email,
         password,
       });
-      const request2 = await axios.post('http://localhost:3000/api/authenticate', {
-        email,
-        password,
-      });
+      const request2 = await axios.post(
+        'https://mysterious-reaches-14293.herokuapp.com/api/authenticate',
+        {
+          email,
+          password,
+        }
+      );
       document.cookie = `email=${email}`;
       document.cookie = `token=${request2.data}`;
-      window.location.href = 'http://localhost:3000/api/homepage';
+      window.location.href = 'https://mysterious-reaches-14293.herokuapp.com/api/homepage';
     } catch (error) {
       if (error.response !== undefined) {
         alert(error.response.data);

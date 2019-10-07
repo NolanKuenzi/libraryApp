@@ -37,12 +37,12 @@ const FrontEnd = () => {
   };
   const signOut = async () => {
     try {
-      await axios.get('http://localhost:3000/api/logout');
+      await axios.get('https://mysterious-reaches-14293.herokuapp.com/api/logout');
       document.cookie = 'email=erased; expires=Thu, 01 Jan 1970 00:00:00 UTC;';
       document.cookie = 'token=erased; expires=Thu, 01 Jan 1970 00:00:00 UTC;';
-      window.location.href = 'http://localhost:3000/';
+      window.location.href = 'https://mysterious-reaches-14293.herokuapp.com/';
     } catch (error) {
-      window.location.href = `http://localhost:3000/api/error?status=500&errMessage=${error}`;
+      window.location.href = `https://mysterious-reaches-14293.herokuapp.com/api/error?status=500&errMessage=${error}`;
     }
   };
   const errFunc = error => {
@@ -53,9 +53,12 @@ const FrontEnd = () => {
   };
   const getData = async () => {
     try {
-      const request = await axios.get('http://localhost:3000/api/books?axios=true', {
-        withCredentials: true,
-      });
+      const request = await axios.get(
+        'https://mysterious-reaches-14293.herokuapp.com/api/books?axios=true',
+        {
+          withCredentials: true,
+        }
+      );
       setBkTitle('');
       setErrDiv('');
       setBookList(request.data.slice(0));
@@ -70,7 +73,7 @@ const FrontEnd = () => {
     event.preventDefault();
     try {
       await axios.post(
-        'http://localhost:3000/api/books?axios=true',
+        'https://mysterious-reaches-14293.herokuapp.com/api/books?axios=true',
         {
           bookTitle: bkTitle,
           email: getCookie('email'),
@@ -99,12 +102,15 @@ const FrontEnd = () => {
   const deleteFunc = async event => {
     event.preventDefault();
     try {
-      await axios.delete(`http://localhost:3000/api/books/${event.target.id}`, {
-        data: {
-          email: getCookie('email'),
-        },
-        withCredentials: true,
-      });
+      await axios.delete(
+        `https://mysterious-reaches-14293.herokuapp.com/api/books/${event.target.id}`,
+        {
+          data: {
+            email: getCookie('email'),
+          },
+          withCredentials: true,
+        }
+      );
       getData();
     } catch (error) {
       errFunc(error);
@@ -112,7 +118,7 @@ const FrontEnd = () => {
   };
   const deleteAllFunc = async () => {
     try {
-      await axios.delete('http://localhost:3000/api/books', {
+      await axios.delete('https://mysterious-reaches-14293.herokuapp.com/api/books', {
         data: {
           email: getCookie('email'),
         },
@@ -127,7 +133,7 @@ const FrontEnd = () => {
     event.preventDefault();
     try {
       await axios.post(
-        `http://localhost:3000/api/books/${renderBk[0]._id}?axios=true`,
+        `https://mysterious-reaches-14293.herokuapp.com/api/books/${renderBk[0]._id}?axios=true`,
         {
           comment: txtArea,
         },

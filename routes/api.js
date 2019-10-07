@@ -150,7 +150,7 @@ module.exports = function (app) {
           from: 'mr.nolank@gmail.com',
           to: email,
           subject: 'Library App Password Reset',
-          text: 'Please note that this email will expire in one hour, after which you will have to request another reset email. Click the following link to reset your password: http://localhost:3000/api/resetPassword',
+          text: 'Please note that this email will expire in one hour, after which you will have to request another reset email. Click the following link to reset your password: https://mysterious-reaches-14293.herokuapp.com/api/resetPassword',
         };
         const payload = { email: req.body.email };
         const token = jwt.sign(payload, process.env.SECRET, {

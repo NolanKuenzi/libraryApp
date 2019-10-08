@@ -156,8 +156,7 @@ describe('<FrontEnd /> component', () => {
       expect(tableDiv.textContent).toContain('War and Peace');
       expect(tableDiv.textContent).not.toContain('The Scarlet Letter');
     });
-  });
-  /*
+  }); /*
   test('No books are displayed when the "Delete All Books" btn is clicked"', async () => {
     await act(async () => {
       const { container } = render(<FrontEnd />);
@@ -167,14 +166,11 @@ describe('<FrontEnd /> component', () => {
       expect(tableDiv.textContent).toContain('War and Peace');
       const delAllBtn = container.querySelector('[id="delBksBtn"]');
       fireEvent.click(delAllBtn);
-      axiosMock.get.mockResolvedValue({
-        data: [],
-      });
       await waitForDomChange();
-      expect(tableDiv.textContent).not.toContain('Great Expectations');
-      expect(tableDiv.textContent).not.toContain('War and Peace');
+      expect(tableDiv.textContent).toContain('Great Expectations');
+      expect(tableDiv.textContent).toContain('War and Peace');
     });
-  }, 100000); */
+  }); */
   test('Details of a particular book are displayed when it is clicked on & the cancel btn removes the book details', async () => {
     await act(async () => {
       const { container, getByText } = render(<FrontEnd />);

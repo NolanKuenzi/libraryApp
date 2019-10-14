@@ -1,10 +1,5 @@
 // Complete the API routing below
 'use strict';
-//const expect = require('chai').expect;
-//const MongoClient = require('mongodb').MongoClient;
-//const ObjectId = require('mongodb').ObjectId;
-//const MONGODB_CONNECTION_STRING = process.env.DB;
-//const cors = require('cors');
 
 require('dotenv').config();
 const User = require('../models/user');

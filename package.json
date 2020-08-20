@@ -9,7 +9,7 @@
 		"test": "node ./node_modules/mocha/bin/mocha"
 	},
 	"dependencies": {
-		"bcrypt": "^3.0.6",
+		"bcrypt": "^5.0.0",
 		"body-parser": "^1.15.2",
 		"chai": "^3.5.0",
 		"chai-http": "^4.3.0",
